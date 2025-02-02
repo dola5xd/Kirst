@@ -32,9 +32,9 @@
 
 Take a look at some of the amazing UI of Krist!
 
-![Home Page](./Screenshots/Home_Page.jpeg)
-![Product Page](./Screenshots/Product_Page.jpeg)
-![Checkout Page](./Screenshots/Checkout_Page.jpeg)
+![Home Page](/public/Screenshots/Home_Page.jpeg)
+![Product Page](/public/Screenshots/Product_Page.jpeg)
+![Checkout Page](/public/Screenshots/Checkout_Page.jpeg)
 
 ---
 
@@ -43,7 +43,7 @@ Take a look at some of the amazing UI of Krist!
 Clone the repository:
 
 ```sh
-git clone https://github.com/dola5xd/krist.git
+git clone https://github.com/dola5xd/Krist.git
 cd krist
 ```
 
