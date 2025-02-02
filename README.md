@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Krist - Online Clothing Shop ✨
 
-## Getting Started
+> **Discover the latest fashion trends at Krist.** 🛍️ Shop our wide selection of clothing and accessories for men and women.
 
-First, run the development server:
+![Kirst](https://socialify.git.ci/dola5xd/Kirst/image?description=1&font=KoHo&logo=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbnixlajp%2Fproduction%2F0f4cb69700ab0ef35765b19f094519cb99ae7797-40x50.svg&name=1&pattern=Formal+Invitation&theme=Dark)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🌟 Features
+
+✅ Seamless shopping experience  
+✅ Secure payments with Stripe  
+✅ Image management with Sanity  
+✅ Smooth animations with AOS  
+✅ Firebase authentication  
+✅ Tailwind CSS for modern styling
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** 🚀 Next.js 15
+- **Styling:** 🎨 Tailwind CSS
+- **Backend:** 🔥 Sanity, Firebase
+- **Payments:** 💳 Stripe
+- **State Management & Forms:** 🔄 React Hook Form
+- **Animations:** 🎥 AOS, Lenis
+
+---
+
+## 📸 Screenshots
+
+Take a look at some of the amazing UI of Krist!
+
+![Home Page](./Screenshots/Home_Page.jpeg)
+![Product Page](./Screenshots/Product_Page.jpeg)
+![Checkout Page](./Screenshots/Checkout_Page.jpeg)
+
+---
+
+## ⚡ Installation
+
+Clone the repository:
+
+```sh
+git clone https://github.com/dola5xd/krist.git
+cd krist
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Development
 
-To learn more about Next.js, take a look at the following resources:
+Start the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build for production:
 
-## Deploy on Vercel
+```sh
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the production server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+npm run start
+```
+
+---
+
+## 📜 Scripts
+
+| Command         | Description                 |
+| --------------- | --------------------------- |
+| `npm run dev`   | 🚀 Start development server |
+| `npm run build` | 🏗️ Build for production     |
+| `npm run start` | 🔥 Start production server  |
+| `npm run lint`  | 📏 Lint the project         |
+
+---
+
+## 📦 Dependencies
+
+```json
+{
+  "@sanity/image-url": "^1.1.0",
+  "@stripe/react-stripe-js": "^3.1.1",
+  "@stripe/stripe-js": "^5.5.0",
+  "aos": "^3.0.0-beta.6",
+  "color-2-name": "^1.4.4",
+  "firebase": "^11.2.0",
+  "lenis": "^1.1.18",
+  "next": "15.1.3",
+  "next-sanity": "^9.8.32",
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0",
+  "react-hook-form": "^7.54.2",
+  "react-icons": "^5.4.0",
+  "react-toastify": "^11.0.3",
+  "stripe": "^17.6.0"
+}
+```
+
+---
+
+## 🔧 Dev Dependencies
+
+```json
+{
+  "@eslint/eslintrc": "^3",
+  "@types/aos": "^3.0.7",
+  "@types/node": "^20",
+  "@types/react": "^19",
+  "@types/react-dom": "^19",
+  "eslint": "^9",
+  "eslint-config-next": "15.1.3",
+  "postcss": "^8",
+  "tailwindcss": "^3.4.1",
+  "typescript": "^5"
+}
+```
+
+---
+
+## 🤝 Contributing
+
+🚀 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📄 License
+
+📜 This project is licensed under the **MIT License**.
+
+---
+
+💖 Made with passion by **Adel Yasser** 🛍️

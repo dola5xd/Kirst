@@ -1,101 +1,68 @@
+import { FaArrowRight } from "react-icons/fa";
+import Button from "./_components/Button";
+import Header from "./_components/Header";
 import Image from "next/image";
+import Link from "next/link";
+import SearchByCategory from "./_components/ShopByCategory";
+import BestSeller from "./_components/BestSeller";
+import ProductsCount from "./_components/ProductsCount";
+import AosSection from "./_components/AosSection";
+import Services from "./_components/Services";
+import Footer from "./_components/Footer";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="w-full min-h-screen ">
+      <Header />
+      <AosSection className="px-4 bg-white">
+        <div className="flex flex-col-reverse md:flex-row text-center md:text-start items-center py-20 md:py-0 gap-4 justify-between md:h-screen w-full md:px-10 bg-[#f3f3f3] relative">
+          <div className="flex flex-col items-center gap-4 md:items-start md:gap-7 md:pl-20 md:w-1/2">
+            <h3 data-aos="zoom-in" className="text-4xl font-semibold">
+              Classic Exclusive
+            </h3>
+            <h1 data-aos="zoom-in" className="text-6xl font-bold">
+              Women&apos;s Collection
+            </h1>
+            <h2 data-aos="zoom-in" className="font-semibold">
+              UPTO 40% OFF
+            </h2>
+            <Link data-aos="zoom-in" href={"/shop"}>
+              <Button title="Shop Now!" className="w-full px-4 py-4">
+                <span className="flex items-center gap-4 text-base">
+                  Shop Now <FaArrowRight />
+                </span>
+              </Button>
+            </Link>
+            <span className="text-[#fafafa] text-[150px] leading-loose font-bold absolute bottom-0 right-2/4 tracking-[2rem] select-none opacity-0 xl:opacity-100 pointer-events-none">
+              BEST
+            </span>
+          </div>
+          <div
+            data-aos="zoom-in"
+            className="relative w-full md:left-0 md:w-1/3 aspect-square md:aspect-auto md:h-screen"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              fill
+              src={"/assets/background/home-bg.png"}
+              alt="woman in Red jacket"
+              className="object-contain select-none md:object-right "
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </AosSection>
+      <AosSection>
+        <SearchByCategory />
+      </AosSection>
+      <AosSection className="flex flex-col w-full gap-10 py-10 text-center md:px-28">
+        <BestSeller />
+      </AosSection>
+      <AosSection>
+        <ProductsCount />
+      </AosSection>
+      <AosSection className="py-20">
+        <Services />
+      </AosSection>
+      <Footer />
+    </main>
   );
 }

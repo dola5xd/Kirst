@@ -2,20 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 20px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 15px;
+  border: 4px solid #fff;
+}
+
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb::-webkit-slider-thumb {
+  background-color: #0a0a0a;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 4.5px;
+  pointer-events: all;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.thumb::-moz-range-thumb {
+  background-color: #0a0a0a;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 4.5px;
+  pointer-events: all;
+  position: relative;
 }
